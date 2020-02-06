@@ -1,0 +1,210 @@
+<mso:customUI xmlns:x1="http://schemas.microsoft.com/office/2009/07/customui/macro" xmlns:mso="http://schemas.microsoft.com/office/2009/07/customui">
+  <mso:ribbon>
+    <mso:tabs>
+      <mso:tab id="amprojecttemplatetab" label="Templates and Scopes">
+        <mso:group id="templatechangeorders" label="Templates and Change Orders" autoScale="true">
+          <mso:dropDown id="TemplateDropDown" label="Template" imageMso="AppointmentColor1">
+            <mso:button id="shorttemplate" label="Short Template" imageMso="AppointmentColor1" onAction="NewMacros.proposal_template_short_form_v3" visible="true"/>
+            <mso:button id="longtemplate" label="Long Template" imageMso="AppointmentColor1" onAction="NewMacros.proposal_template_long_form_v3" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="ChangeOrder" label="Change Order" imageMso="AppointmentColor1">
+            <mso:button id="BPv2" label="Bright Power v.2.0" imageMso="AppointmentColor1" onAction="NewMacros.change_order_bright_power_v2" visible="true"/>
+            <mso:button id="BPCoastv2" label="Bright Coastal v.2.0" imageMso="AppointmentColor1" onAction="NewMacros.change_order_bright_coastal_v2" visible="true"/>
+          </mso:dropDown>
+          </mso:group>
+        <mso:group id="scopes" label="Scopes" autoScale="true">
+          <mso:dropDown id="energyscorecardsdropdown" label="ESC" imageMso="AppointmentColor4">
+            <mso:button id="ESCProposalTemp" label="ESC Proposal Template v1.3" imageMso="AppointmentColor4" onAction="NewMacros.esc_proposal_template_v1_3" visible="true"/>
+            <mso:button id="ESCSubscription31119" label="ESC Subscription Agreement v1.3 - 3.11.19" imageMso="AppointmentColor4" onAction="NewMacros.esc_subscription_agreement_v1_3_3_11_19" visible="true"/>
+            <mso:button id="LL84Agreement21618" label="LL84 Agreement v1.2 - 2.16.18" imageMso="AppointmentColor4" onAction="NewMacros.ll84_agreement_v1_2_2_16_18" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="CaliBenchmark" label="California Benchmarking" imageMso="AppointmentColor4">
+            <mso:button id="AB802BenchmarkingAppendices" label="AB 802 Benchmarking Compliance Services (with Appendices)" imageMso="AppointmentColor4" onAction="NewMacros.AB_802_benchmarking_compliance_services_with_appendices" visible="true"/>
+          </mso:dropDown>
+        </mso:group>
+      </mso:tab>
+      <mso:tab id="auditsandDI" label="Audits - DI - EMS - NC Scopes">
+        <mso:group id="auditgroup" label="Audits" autoScale="true">
+          <mso:dropDown id="auditdropdown" label="Audit Scopes" imageMso="AppointmentColor2">
+            <mso:button id="ashraelevel2" label="ASHRAE Level 2 Audit" imageMso="AppointmentColor2" onAction="NewMacros.level_2_energy_audit" visible="true"/>
+            <mso:button id="ASHRAE2LL97NYC" label="ASHRAE Level 2 Energy Audit + LL97 Assessment (NYC-only)" imageMso="AppointmentColor2" onAction="NewMacros.ashrae_level_2_energy_audit_ll97_ssessment_nyc_only_services" visible="true"/>
+            <mso:button id="CAdeferredaudit" label="CA Deferred Audit (with Cover Page, T's and C's and App.)" imageMso="AppointmentColor2" onAction="NewMacros.ca_deferred_audit" visible="true"/>
+            <mso:button id="comprehensiveaudit" label="Comprehensive Audit " imageMso="AppointmentColor2" onAction="NewMacros.comprehensive_energy_audit_nyc" visible="true"/>
+            <mso:button id="comprehensiveauditNYCLL97" label="Comprehensive Energy Audit (NYC) + LL97 Assessment" imageMso="AppointmentColor2" onAction="NewMacros.comprehensive_energy_audit_nyc_ll97_assessment_services" visible="true"/>
+            <mso:button id="comprehensiveauditoutside" label="Comprehensive Audit (Outside NYC)" imageMso="AppointmentColor2" onAction="NewMacros.comprehensive_energy_audit_outside_nyc" visible="true"/>
+            <mso:button id="DHCDenergyauditlevel2" label="DHCD Energy Audit Level 2.0" imageMso="AppointmentColor2" onAction="NewMacros.dhcd_energy_audit_level_2" visible="true"/>
+            <mso:button id="IPNAEnergyAuditingServices" label="IPNA Energy Auditing" imageMso="AppointmentColor2" onAction="NewMacros.ipna_energy_auditing_services" visible="true"/>
+            <mso:button id="IPNALL97NYC" label="IPNA Energy Auditing + LL97 Assessment (NYC-only)" imageMso="AppointmentColor2" onAction="NewMacros.ipna_energy_auditing_ll97_assessment_nyc_only_services" visible="true"/>
+            <mso:button id="LISCEnergyAuditASHRAELevel2" label="LISC Energy Audit ASHRAE Level 2 Design Charrette" imageMso="AppointmentColor2" onAction="NewMacros.lisc_energy_audit_ashrae_level_2_design_charrette" visible="true"/>
+            <mso:button id="LL87EnergyAuditRCxSubmission" label="LL87 Energy Audit, RCx and Submission Services" imageMso="AppointmentColor2" onAction="NewMacros.ll87_energy_audit_rcx_submission_services" visible="true"/>
+            <mso:button id="LL87RCxSubmissionLL97" label="LL87 Energy Audit, RCx and Submission + LL97 Assessment" imageMso="AppointmentColor2" onAction="NewMacros.ll87_energy_audit_rcx_submission_ll97_assessment_services" visible="true"/>
+            <mso:button id="LL87EnergyAuditLevel3RCxSubmission" label="LL87 Energy Audit Level 3.0, RCx, and Submission Services" imageMso="AppointmentColor2" onAction="NewMacros.ll87_energy_audit_level_3_rcx_submission_services" visible="true"/>
+            <mso:button id="LL87Level3RCxSubmissionLL97" label="LL87 Energy Audit Level 3.0, RCx, and Submission Services + LL97 Assessment" imageMso="AppointmentColor2" onAction="NewMacros.ll87_energy_audit_level_3_rcx_submission_ll97_assessment_services" visible="true"/>
+            <mso:button id="NoCostEUCEnergyAuditCalifornia" label="No-Cost EUC Energy Audit (California) (with Cover Page, T's and C's and App.)" imageMso="AppointmentColor2" onAction="NewMacros.nocost_euc_energy_audit_california" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="auditdropdown2" label="Other Scopes" imageMso="AppointmentColor2">
+            <mso:button id="ConEdisonNonWiresSolutionsProgram" label="ConEdison Non-Wires Solutions Program - Project Scoping" imageMso="AppointmentColor2" onAction="NewMacros.conedison_nonwires_solutions_program_project_scoping_services" visible="true"/>
+            <mso:button id="EnergyStarCetrificationServicesNYC" label="Energy Star Certification (NYC)" imageMso="AppointmentColor2" onAction="NewMacros.energy_star_certification_services_nyc" visible="true"/>
+            <mso:button id="FuelConversionAssessmentServices" label="Fuel Conversion Assessment" imageMso="AppointmentColor2" onAction="NewMacros.fuel_conversion_assessment_services" visible="true"/>
+            <mso:button id="NJCEPP4PERPConstructionImplementation" label="NJCEP Pay-for-Performance (P4P) - ERP and Construction Implementation + Post-Construction Benchmarking" imageMso="AppointmentColor2" onAction="NewMacros.njcep_payforperformance_p4p_erp_construction_implementation_postconstruction_benchmarking_services" visible="true"/>
+            <mso:button id="ProjectScopingAudit" label="Project Scoping Audit" imageMso="AppointmentColor2" onAction="NewMacros.project_scoping_audit_services" visible="true"/>
+            <mso:button id="ProjectScopingPlusAudit" label="Project Scoping Plus Audit" imageMso="AppointmentColor2" onAction="NewMacros.project_scoping_plus_audit_services" visible="true"/>
+            <mso:button id="ProjectScopingAuditLL97NYConly" label="Project Scoping Audit + LL97 Assessment (NYC-only)" imageMso="AppointmentColor2" onAction="NewMacros.project_scoping_audit__ll97_assessment_nyc_only_services" visible="true"/>
+            <mso:button id="ProjectScopingPlusAuditLL97NYConly" label="Project Scoping Plus + Audit + LL97 Assessment (NYC-only)" imageMso="AppointmentColor2" onAction="NewMacros.project_scoping_plus_audit_ll97_assessment_nyc_only_services" visible="true"/>
+            <mso:button id="TurnkeyProjectScopeAuditfirmpricesubs" label="Turnkey Project Scoping Plus Audit (firm pricing with subs)" imageMso="AppointmentColor2" onAction="NewMacros.turnkey_project_scoping_plus_audit_firm_pricing_with_subs" visible="true"/>
+            <mso:button id="TurnkeyProjectScopingAuditfirmpricingsubsLL97NYC" label="Turnkey Project Scoping Plus Audit (firm pricing with subs) LL97 Assessment (NYC only)" imageMso="AppointmentColor2" onAction="NewMacros.turnkey_project_scoping_plus_audit_firm_pricing_with_subs_ll97_assessment_nyc_only_services" visible="true"/>
+            <mso:button id="RCx" label="Retro-commissioning (RCx)" imageMso="AppointmentColor2" onAction="NewMacros.retrocommissioning_rcx_services" visible="true"/>
+            <mso:button id="RCxLL87Submission" label="RCx and LL87 Submission" imageMso="AppointmentColor2" onAction="NewMacros.rcx_ll87_submission_services" visible="true"/>
+           </mso:dropDown>
+          <mso:dropDown id="auditappdropdown" label="Appendices" imageMso="AppointmentColor2">
+            <mso:button id="PropInfoMechSysList" label="ASHRAE Level 2 Property Info + Mechanical Systems List" imageMso="AppointmentColor2" onAction="NewMacros.appendix_property_info_mechanical_systems_list" visible="true"/>
+            <mso:button id="comprehensiveauditapp" label="Comprehensive Audit Property Info + Mechanical Systems List" imageMso="AppointmentColor2" onAction="NewMacros.comprehensive_energy_audit_nyc_appendix_property_info_mechanical_systems_list" visible="true"/>
+            <mso:button id="comprehensiveauditoutsideapp" label="Comprehensive Audit (Outside NYC) Property Info + Mechanical Systems List" imageMso="AppointmentColor2" onAction="NewMacros.comprehensive_energy_audit_appendix_property_info_mechanical_systems_list" visible="true"/>
+            <mso:button id="ConEdisonNonWiresSolutionsProgramApp" label="ConEdison Non-Wires Solutions Program" imageMso="AppointmentColor2" onAction="NewMacros.conedison_nonwires_solutions_program_appendix" visible="true"/>
+            <mso:button id="DHCDenergyauditlevel2app" label="DHCD Energy Audit Level 2.0 Property Info + Mechanical Systems List" imageMso="AppointmentColor2" onAction="NewMacros.dhcd_energy_audit_level_2_appendix_property_info_mechanical_systems_list" visible="true"/>
+            <mso:button id="EnergyStarCetrificationServicesNYCApp" label="Energy Star Cetrification Services (NYC) Property Info + Mechanical Systems List" imageMso="AppointmentColor2" onAction="NewMacros.energy_star_nyc_appendix_property_info_mechanical_systems_list" visible="true"/>
+            <mso:button id="LL87EnergyAuditLevelRCxSubmissionServicesApp" label="LL87 Energy Audit, RCx, and Submission Property Info + Mechanical Systems List" imageMso="AppointmentColor2" onAction="NewMacros.ll87_energy_audit_rcx_submission_services_appendix_property_info_mechanical_systems_list" visible="true"/>
+            <mso:button id="LL87EnergyAuditLevel3RCxSubmissionServicesApp" label="LL87 Energy Audit Level 3.0, RCx, and Submission Property Info + Mechanical Systems List" imageMso="AppointmentColor2" onAction="NewMacros.ll87_energy_audit_3_rcx_submission_services_appendix_property_info_mechanical_systems_list" visible="true"/>
+            <mso:button id="P4PEBApp" label="P4P EB - Property Info + Mechanical Systems List" imageMso="AppointmentColor2" onAction="NewMacros.p4p_eb_appendix_property_info_mechanical_systems_list" visible="true"/>
+            <mso:button id="RCxLL87SubmPROPINFOMECHSYS" label="RCx LL87 Submission Property Info + Mechanical Systems List" imageMso="AppointmentColor2" onAction="NewMacros.RCx_LL87_Submission_APPENDIX_PROPERTY_INFO_MECHANICAL_SYSTEMS_LIST" visible="true"/>
+          </mso:dropDown>
+        </mso:group>
+        <mso:group id="designimplementationgroup" label="Design and Implementation" autoScale="true">
+          <mso:dropDown id="designimplementationdropdown" label="Scopes" imageMso="AppointmentColor3">
+            <mso:button id="CommissioningAgentforExistingBuildingsNOTcodecompliant" label="Commissioning Agent (EB) (NOT code-compliant)" imageMso="AppointmentColor3" onAction="NewMacros.commissioning_agent_for_existing_buildings_not_codecompliant" visible="true"/>
+            <mso:button id="NYCECCCompliantCommissioningforExistingBuildings" label="NYCECC-Compliant Commissioning (EB)" imageMso="AppointmentColor3" onAction="NewMacros.nycecccompliant_commissioning_for_existing_buildings" visible="true"/>
+            <mso:button id="MPPv8PartnerServices" label="MPP v8 Partner Services" imageMso="AppointmentColor3" onAction="NewMacros.mpp_v8_partner_services" visible="true"/>
+            <mso:button id="ProjectEngineeringServicesLane2DesignEngineer" label="Project Engineering Services Lane 2 Design Engineer [not filing]" imageMso="AppointmentColor3" onAction="NewMacros.design_engineer_not_filing" visible="true"/>
+            <mso:button id="ProjectEngineeringServicesLane2EngineerofRecord" label="Project Engineering Services Lane 2 Engineer of Record" imageMso="AppointmentColor3" onAction="NewMacros.engineer_of_record_filing" visible="true"/>
+            <mso:button id="SteamBalancingConEdMFEEP1pipeRCxServices" label="Steam Balancing + ConEd MFEEP 1-Pipe RCx" imageMso="AppointmentColor3" onAction="NewMacros.steam_balancing_coned_mfeep_1pipe_rcx_services" visible="true"/>
+            <mso:button id="SteamBalancingServices" label="Steam Balancing" imageMso="AppointmentColor3" onAction="NewMacros.steam_balancing_services" visible="true"/>
+            <mso:button id="NYRegionTurnkeyRetrofitInstallationServicesEastCoastandTsCs" label="[New York Region] Turnkey Retrofit Installation [with East Coast Ts and Cs]" imageMso="AppointmentColor3" onAction="NewMacros.new_york_region_turnkey_retrofit_installation_services_with_east_coast_tscs" visible="true"/>
+            <mso:button id="WesternRegionTurnkeyRetrofitInstallationServiceswithCATsCs" label="[Western Region] Turnkey Retrofit Installation [with CA Ts and Cs]" imageMso="AppointmentColor3" onAction="NewMacros.western_region_turnkey_retrofit_installation_services_with_ca_tscs" visible="true"/>
+            <mso:button id="WesternRegionTurnkeyRetrofitInstallationServiceswithCATsCsandOntimeBonusAssignment" label="[Western Region] Turnkey Retrofit Installation [with CA Ts and Cs] + On-time Bonus Assignment" imageMso="AppointmentColor3" onAction="NewMacros.western_region_turnkey_retrofit_installation_services_with_ca_tscs_ontime_bonus_assignment" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="DITCdropdown" label="Terms and Conditions" imageMso="AppointmentColor3">
+            <mso:button id="EastCoastTurnkeyTsandCs" label="East Coast Turnkey T's and C's" imageMso="AppointmentColor3" onAction="NewMacros.turnkey_retrofit_tscs_east_coast" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="DIappdropdown" label="Appendices" imageMso="AppointmentColor3">
+            <mso:button id="APPENDIXPlannedUpgradesApplicableSystems" label="Planned Upgrades and Applicable Systems" imageMso="AppointmentColor3" onAction="NewMacros.appendix_planned_upgrades_applicable_systems" visible="true"/>
+          </mso:dropDown>
+        </mso:group>
+        <mso:group id="energymanagementgroup" label="Energy Management Services" autoScale="true">
+          <mso:dropDown id="EMSScopes" label="Scopes" imageMso="AppointmentColor5">
+            <mso:button id="Stack1" label="Stack 1" imageMso="AppointmentColor5" onAction="NewMacros.ems_stack_1_services" visible="true"/>
+            <mso:button id="Stack1ESCSubscriptionTermsFees" label="Stack 1 (ESC Subscription Terms and Fees Included)" imageMso="AppointmentColor5" onAction="NewMacros.ems_stack_1_esc_subscription_terms_fees_included" visible="true"/>
+            <mso:button id="Stack2" label="Stack 2" imageMso="AppointmentColor5" onAction="NewMacros.ems_stack_2_services" visible="true"/>
+            <mso:button id="Stack2LogCheck" label="Stack 2 + LogCheck" imageMso="AppointmentColor5" onAction="NewMacros.ems_stack_2_logcheck_services" visible="true"/>
+            <mso:button id="Stack2LogCheckESC" label="Stack 2 + LogCheck (ESC Subscription Terms and Fees Included)" imageMso="AppointmentColor5" onAction="NewMacros.ems_stack_2_logcheck_services_esc_subscription_terms_fees_included" visible="true"/>
+            <mso:button id="Stack3" label="Stack 3" imageMso="AppointmentColor5" onAction="NewMacros.ems_stack_3_services" visible="true"/>
+            <mso:button id="Stack3LogCheck" label="Stack 3 + LogCheck" imageMso="AppointmentColor5" onAction="NewMacros.ems_stack_3_logcheck_services" visible="true"/>
+            <mso:button id="Stack3LogCheckESC" label="Stack 3 + LogCheck (ESC Subscription Terms and Fees Included)" imageMso="AppointmentColor5" onAction="NewMacros.ems_stack_3_logcheck_services_esc_subscription_terms_fees_included" visible="true"/>
+            <mso:button id="UC3DesignConsultNC" label="UC 3 Design Consulting NC" imageMso="AppointmentColor5" onAction="NewMacros.ems_uc_3_design_consulting_services_new_construction" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="EMSappdropdown" label="Appendices" imageMso="AppointmentColor5">
+            <mso:button id="BuildingSysList" label="Building Systems List" imageMso="AppointmentColor5" onAction="NewMacros.ems_appendix_building_systems_list" visible="true"/>
+          </mso:dropDown>
+        </mso:group>
+        <mso:group id="newconstructiongroup" label="New Construction" autoScale="true">
+          <mso:dropDown id= "EGCCover" label="Cover Letter" imageMso="AppointmentColor6">
+            <mso:button id="EGCCov" label="EGC + NYCECC Cx" imageMso="AppointmentColor6" onAction="NewMacros.egc_nycecc_cx_services_cover_letter" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="Cxscopes" label="Cx Scopes" imageMso="AppointmentColor6">
+            <mso:button id="ECCCNYS" label="ECCCNYS Cx " imageMso="AppointmentColor6" onAction="NewMacros.ecccnys_cx_services" visible="true"/>
+            <mso:button id="NYCECCCx" label="NYCECC Cx" imageMso="AppointmentColor6" onAction="NewMacros.nycecc_cx_services" visible="true"/>
+            <mso:button id="NYCECCCxAddAltBrightPowerCompCxAddAltIntegrated" label="NYCECC Cx + (Add-Alt) Bright Power Comprehensive Cx [Add-Alt Integrated]" imageMso="AppointmentColor6" onAction="NewMacros.nycecc_cx_add_alt_bright_power_comprehensive_cx_add_alt_integrated" visible="true"/>
+            <mso:button id="NYCECCCxAddAltBrightPowerCompCxAddAltSeparated" label="NYCECC Cx + (Add-Alt) Bright Power Comprehensive Cx [Add-Alt Separated]" imageMso="AppointmentColor6" onAction="NewMacros.nycecc_cx_addalt_bright_power_comprehensive_cx_addalt_separated" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="EGCscopes" label="EGC Scopes" imageMso="AppointmentColor6">
+            <mso:button id="EGCRESNETManENERGY" label="EGC (NC) (RESNET) + EGC Manuals (Add-Alt) + ENERGY STAR (LRNCP)" imageMso="AppointmentColor6" onAction="NewMacros.egc_resnet_egc_manuals_addalt_energy_star_lrncp_services" visible="true"/>
+            <mso:button id="EGCRESNETEnergyCreditsMansENERGY" label="EGC (NC) (RESNET) Energy Credits 5.1a + EGC Manuals (Add-Alt) + ENERGY STAR (LRNCP)" imageMso="AppointmentColor6" onAction="NewMacros.egc_resnet_energy_credits_5" visible="true"/>
+            <mso:button id="EGCFullMan" label="EGC (NC) [Full Credit Consulting] + EGC Manuals (Add-Alt)" imageMso="AppointmentColor6" onAction="NewMacros.egc_full_credit_consulting_egc_manuals_addalt_services" visible="true"/>
+            <mso:button id="EGCEnergyCreditsMidHighManuals" label="EGC (NC) Energy Credits 5.1b Consulting (Mid to High-rise) + EGC Manuals (Add-Alt)" imageMso="AppointmentColor6" onAction="NewMacros.egc_energy_credits_5" visible="true"/>
+            <mso:button id="EGCReEnergyCreditsLowMan" label="EGC (Rehab) Energy Credits 5.1c Consulting (Low-rise) + EGC Manuals (Add-Alt)" imageMso="AppointmentColor6" onAction="NewMacros.egc_rehab_energy_credits_51c_consulting_lowrise_egc_manuals_addalt_services" visible="true"/>
+            <mso:button id="EGCReEnergyCreditsMidHighMan" label="EGC (Rehab) Energy Credits 5.1d Consulting (Mid to High-rise) + EGC Manuals (Add-Alt)" imageMso="AppointmentColor6" onAction="NewMacros.egc_rehab_energy_credits_51d_consulting_mid_to_highrise_egc_manuals_addalt_services" visible="true"/>
+            <mso:button id="EGCReFullCreditLowMan" label="EGC (Rehab)  - Full Credit Consulting (Low-rise) + EGC Manuals (Add-Alt)" imageMso="AppointmentColor6" onAction="NewMacros.egc_rehab_services_full_credit_consulting_lowrise_egc_manuals_addalt_services" visible="true"/>
+            <mso:button id="EGCReFullCreditMidHighMan" label="EGC (Rehab) - Full Credit Consulting (Mid to High-rise) + EGC Manuals (Add-Alt)" imageMso="AppointmentColor6" onAction="NewMacros.egc_rehab_services_full_credit_consulting_mid_to_highrise_egc_manuals_addalt_services" visible="true"/>
+            <mso:button id="EGCNYCECCCompCxInt" label="EGC + NYCECC Cx OR (Add-Alt) Bright Prower Comprehensive Cx  [Integrated]" imageMso="AppointmentColor6" onAction="NewMacros.egc_nycecc_cx_or_addalt_bright_prower_comprehensive_cx_services_integrated" visible="true"/>
+            <mso:button id="EGCNYCECCCompSep" label="EGC + NYCECC Cx OR (Add-Alt) Bright Prower Comprehensive Cx  [Separated]" imageMso="AppointmentColor6" onAction="NewMacros.egc_nycecc_cx_or_addalt_bright_prower_comprehensive_cx_services_separated" visible="true"/>
+            <mso:button id="EGCReNYCECCCompCxInt" label="EGC (Rehab) + NYCECC Cx OR (Add-Alt) Bright Prower Comprehensive Cx  [Integrated]" imageMso="AppointmentColor6" onAction="NewMacros.egc_rehab_nycecc_cx_or_addalt_bright_prower_comprehensive_cx_services_integrated" visible="true"/>
+            <mso:button id="EGCReNYCECCCompCxSep" label="EGC (Rehab) + NYCECC Cx OR (Add-Alt) Bright Prower Comprehensive Cx  [Separated]" imageMso="AppointmentColor6" onAction="NewMacros.egc_rehab_nycecc_cx_or_addalt_bright_prower_comprehensive_cx_services_separated" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="PassiveScopes" label="PHI/PHIUS Scopes" imageMso="AppointmentColor6">
+            <mso:button id="PHIConsultCert" label="PHI Consulting and Certification" imageMso="AppointmentColor6" onAction="NewMacros.phi_consulting_certification_services" visible="true"/>
+            <mso:button id="PHIConsultCertNYSERDANCP" label="PHI Consulting and Certification Services + NYSERDA NCP" imageMso="AppointmentColor6" onAction="NewMacros.phi_consulting_certification_services_nyserda_ncp_services" visible="true"/>
+            <mso:button id="PHIConsultCertNYSERDANCPEGC" label="PHI Consulting and Certification Services + NYSERDA NCP (EGC compatible)" imageMso="AppointmentColor6" onAction="NewMacros.phi_consulting_certification_services_nyserda_ncp_services_egc_compatible" visible="true"/>
+            <mso:button id="PHIConsultCertNYSERDANCPEGCNYCECCCxcompatible" label="PHI Consulting and Certification Services + NYSERDA NCP (EGC + NYCECC Cx compatible)" imageMso="AppointmentColor6" onAction="NewMacros.phi_consulting_certification_services_nyserda_ncp_services_egc_nycecc_cx_compatible" visible="true"/>
+            <mso:button id="PHIConsultCertNYSERDANCPEGCCompCxcompatible" label="PHI Consulting and Certification Services + NYSERDA NCP (EGC + Comprehensive Cx compatible)" imageMso="AppointmentColor6" onAction="NewMacros.phi_consulting_certification_services_nyserda_ncp_services_egc_comprehensive_cx_compatible" visible="true"/>
+            <mso:button id="PHIUSFeasibilityConsult" label="PHIUS Feasibility Consulting" imageMso="AppointmentColor6" onAction="NewMacros.phius_feasibility_consulting_service" visible="true"/>
+            <mso:button id="PHIUSConsultPHIUSVerifierNYSERDANCP" label="PHIUS Consulting and PHIUS+ Verifier Services and NYSERDA NCP" imageMso="AppointmentColor6" onAction="NewMacros.phius_consulting_phius_verifier_services_nyserda_ncp_services" visible="true"/>
+            <mso:button id="PHIUSConsultPHIUSVerifierNYSERDANCPEGCcompatible" label="PHIUS Consulting and PHIUS+ Verifier Services and NYSERDA NCP (EGC compatible)" imageMso="AppointmentColor6" onAction="NewMacros.phius_consulting_phius_verifier_services_nyserda_ncp_services_egc_compatible" visible="true"/>
+            <mso:button id="PHIUSConsultPHIUSVerifierNYSERDANCPEGCNYCECCCxcompatible" label="PHIUS Consulting and PHIUS+ Verifier Services and NYSERDA NCP (EGC + NYCECC Cx compatible)" imageMso="AppointmentColor6" onAction="NewMacros.phius_consulting_phius_verifier_services_nyserda_ncp_services_egc_nycecc_cx_compatible" visible="true"/>
+            <mso:button id="PHIUSConsultPHIUSVerifierNYSERDANCPEGCCompCxcompatible" label="PHIUS Consulting and PHIUS+ Verifier Services and NYSERDA NCP (EGC + Comprehensive Cx compatible)" imageMso="AppointmentColor6" onAction="NewMacros.phius_consulting_phius_verifier_services_nyserda_ncp_services_egc_comprehensive_cx_compatible" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="Otherscopes" label="Other Scopes" imageMso="AppointmentColor6">
+            <mso:button id="NYSERDABoE" label="NYSERDA Buildings of Excellence" imageMso="AppointmentColor6" onAction="NewMacros.nyserda_buildings_of_excellence_rfp_services" visible="true"/>
+            <mso:button id="ENERGYMFHR" label="ENERGY STAR MFHR Certification" imageMso="AppointmentColor6" onAction="NewMacros.energy_star_mfhr_certification_services" visible="true"/>
+            <mso:button id="ENERGYMFHRNYSERDANCP" label="ENERGY STAR MFHR Certification thru NYSERDA NCP" imageMso="AppointmentColor6" onAction="NewMacros.energy_star_mfhr_certification_thru_nyserda_ncp_services" visible="true"/>
+            <mso:button id="FitwelCert" label="Fitwel Certification" imageMso="AppointmentColor6" onAction="NewMacros.fitwel_certification_services" visible="true"/>
+            <mso:button id="FitwelEGCNYCECCCxAdd-AltNCPBOE" label="Fitwel, EGC, NYCECC Cx, Add-Alt for NCP + BOE" imageMso="AppointmentColor6" onAction="NewMacros.fitwel_egc_nycecc_cx_addalt_for_ncp_boe_services" visible="true"/>
+            <mso:button id="HighPerformanceBuildConsulting" label="High-Performance Building Consulting" imageMso="AppointmentColor6" onAction="NewMacros.high_performance_building_consulting_services" visible="true"/>
+            <mso:button id="HighPerformanceBuildingConsultingEGCManADDALT" label="High-Performance Building Consulting + EGC (Manuals ADD-ALT)" imageMso="AppointmentColor6" onAction="NewMacros.high_performance_building_consulting_egc_manuals_add_alt_services" visible="true"/>
+            <mso:button id="LEEDv4NCConsult" label="LEED v4 NC (Consulting only)" imageMso="AppointmentColor6" onAction="NewMacros.leed_v4_nc_consulting_only_services" visible="true"/>
+            <mso:button id="LEEDv4NCConsultingFundamentalCxLEEDv4NCNYCECCCx" label="LEED v4 NC Consulting + Fundamental Cx for LEED v4 NC-NYCECC Cx" imageMso="AppointmentColor6" onAction="NewMacros.leed_v4_nc_consulting_fundamental_cx_for_leed_v4_nc_nycecc_cx_services" visible="true"/>
+            <mso:button id="LEEDv4NCConsultLEEDv4NCFundamentalEnhancedCxIntegrated" label="LEED v4 NC Consulting + LEED v4 NC Fundamental OR Enhanced Cx [Integrated]" imageMso="AppointmentColor6" onAction="NewMacros.leed_v4_nc_consulting_leed_v4_nc_fundamental_or_enhanced_cx_services_integrated" visible="true"/>
+            <mso:button id="LEEDv4NCConsultingLEEDv4NCFundamentalEnhancedCxSeparated" label="LEED v4 NC Consulting + LEED v4 NC Fundamental OR Enhanced Cx [Separated]" imageMso="AppointmentColor6" onAction="NewMacros.leed_v4_nc_consulting_leed_v4_nc_fundamental_or_enhanced_cx_services_separated" visible="true"/>
+            <mso:button id="LEEDHomesv4ConsultLEEDHomesv4HVACNYCECCCx" label="LEED for Homes v4 Consulting + LEED for Homes v4 HVAC-NYCECC Cx" imageMso="AppointmentColor6" onAction="NewMacros.leed_for_homes_v4_consulting_leed_for_homes_v4_hvac_nycecc_cx_services" visible="true"/>
+            <mso:button id="NJCEPP4PNewConstructionCompCX" label="NJCEP P4P New Construction + Comprehensive Cx" imageMso="AppointmentColor6" onAction="NewMacros.njcep_p4p_new_construction_comprehensive_cx_services" visible="true"/>
+            <mso:button id="NJCEPResidentialNewConstructionProgramMFHR" label="NJCEP Residential New Construction Program - MFHR" imageMso="AppointmentColor6" onAction="NewMacros.njcep_residential_new_construction_program_mfhr_services" visible="true"/>
+            <mso:button id="NYSERDAMultiNCProgramMFNCP2019" label="NYSERDA Multifamily New Construction Program (MF NCP) 2019" imageMso="AppointmentColor6" onAction="NewMacros.nyserda_multifamily_new_construction_program_mf_ncp_2019" visible="true"/>
+            <mso:button id="TR8" label="TR-8 Energy Code Progress Inspections" imageMso="AppointmentColor6" onAction="NewMacros.tr8_energy_code_progress_inspections" visible="true"/>
+          </mso:dropDown>
+        </mso:group>
+      </mso:tab>
+      <mso:tab id="OSG" label="On-Site Generation">
+        <mso:group id="OSGgroup" label="On-Site Generation" autoScale="true">
+        	<mso:dropDown id="OSGExeCon" label="Executable Contracts" imageMso="AppointmentColor7">
+            <mso:button id="EBCHPInstallExe" label="EB CHP Installation" imageMso="AppointmentColor7" onAction="NewMacros.eb_chp_installation_services_executable" visible="true"/>
+            <mso:button id="EBCHPInstall1yearExe" label="EB CHP Installation (1-Year Workmanship Warranty)" imageMso="AppointmentColor7" onAction="NewMacros.eb_chp_installation_services_executable_1year_workmanship_warranty" visible="true"/>
+            <mso:button id="EBPVInstallBallastedExe" label="EB Solar PV Installation (Ballasted)" imageMso="AppointmentColor7" onAction="NewMacros.eb_solar_pv_installation_services_ballasted_executable" visible="true"/>
+            <mso:button id="EBPVInstallPostRailExe" label="EB Solar PV Installation (Post and Rail)" imageMso="AppointmentColor7" onAction="NewMacros.eb_solar_pv_installation_services_post_and_rail_executable" visible="true"/>
+            <mso:button id="NCPVInstallBallastExe" label="NC Solar PV Installation (Ballasted)" imageMso="AppointmentColor7" onAction="NewMacros.nc_solar_pv_installation_services_ballasted_executable" visible="true"/>
+            <mso:button id="NCPVInstallPostRailExe" label="NC Solar PV Installation (Post and Rail)" imageMso="AppointmentColor7" onAction="NewMacros.nc_solar_pv_installation_services_post_and_rail_executable" visible="true"/>
+            <mso:button id="NCPVInstallStrucSteelDunnageExe" label="NC Solar PV Installation (Structural Steel Dunnage - Tilted Plane)" imageMso="AppointmentColor7" onAction="NewMacros.nc_solar_pv_installation_services_structural_steel_dunnage_tilted_plane_executable" visible="true"/>
+            <mso:button id="NCPVInstallStrucSteelPergolaExe" label="NC Solar PV Installation (Structural Steel Pergola)" imageMso="AppointmentColor7" onAction="NewMacros.nc_solar_pv_installation_services_structural_steel_pergola_executable" visible="true"/>
+          </mso:dropDown>
+        	<mso:dropDown id="OSGNonExeCon" label="Non-Executable Contracts" imageMso="AppointmentColor7">
+            <mso:button id="EBPVInstallBallastedNonExe" label="EB Solar PV Installation (Ballasted)" imageMso="AppointmentColor7" onAction="NewMacros.eb_solar_pv_installation_services_ballasted_nonexecutable" visible="true"/>
+            <mso:button id="EBPVInstallPostRailNonExe" label="EB Solar PV Installation (Post and Rail)" imageMso="AppointmentColor7" onAction="NewMacros.eb_solar_pv_installation_services_post_and_rail_nonexecutable" visible="true"/>
+            <mso:button id="NCPVInstallBallastNonExe" label="NC Solar PV Installation (Ballasted)" imageMso="AppointmentColor7" onAction="NewMacros.nc_solar_pv_installation_services_ballasted_nonexecutable" visible="true"/>
+            <mso:button id="NCPVInstallPostRailNonExe" label="NC Solar PV Installation (Post and Rail)" imageMso="AppointmentColor7" onAction="NewMacros.nc_solar_pv_installation_services_post_and_rail_nonexecutable" visible="true"/>
+            <mso:button id="NCPVInstallStrucSteelDunnageNonExe" label="NC Solar PV Installation (Structural Steel Dunnage - Tilted Plane)" imageMso="AppointmentColor7" onAction="NewMacros.nc_solar_pv_installation_services_steeldunnagetiltedplane_nonexecutable" visible="true"/>
+            <mso:button id="NCPVInstallStrucSteelPergolaNonExe" label="NC Solar PV Installation (Structural Steel Pergola)" imageMso="AppointmentColor7" onAction="NewMacros.nc_solar_pv_installation_services_structural_steel_pergola_nonexecutable" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="OSGscopes" label="Scopes" imageMso="AppointmentColor7">
+            <mso:button id="CHPFeasibilityStudy" label="CHP Feasibility Study (EB) Non-Programmatic" imageMso="AppointmentColor7" onAction="NewMacros.CHP_Feasibility_Study_Services_EB_non_programmatic" visible="true"/>
+            <mso:button id="CHPCx" label="CHP System Commissioning (Cx)" imageMso="AppointmentColor7" onAction="NewMacros.chp_system_commissioning_cx" visible="true"/>
+            <mso:button id="DesignEngenofilePV" label="Design Engineer [not filing] (Solar PV)" imageMso="AppointmentColor7" onAction="NewMacros.design_engineer_services_not_filing_solar_pv" visible="true"/>
+            <mso:button id="OSGEnergyStorageDesignNC" label="OSG and Energy Storage Design Consulting (NC)" imageMso="AppointmentColor7" onAction="NewMacros.onsite_generation_osg_energy_storage_design_consulting_services_nc" visible="true"/>
+            <mso:button id="PON2568CHPFeasStudyEB" label="PON 2568 CHP Feasibility Study (EB)" imageMso="AppointmentColor7" onAction="NewMacros.pon_2568_chp_feasibility_study_services_eb" visible="true"/>
+            <mso:button id="PON256CHPFeasConsulNC" label="PON 2568 CHP Feasibility Consulting (NC)" imageMso="AppointmentColor7" onAction="NewMacros.pon_2568_chp_feasibility_consulting_services_nc" visible="true"/>
+            <mso:button id="PreCHPScopePricing" label="Preliminary CHP Scoping and Pricing" imageMso="AppointmentColor7" onAction="NewMacros.preliminary_chp_scoping_pricing_services" visible="true"/>
+            <mso:button id="PSEGLICHPFeasibilityStudyEB" label="PSEG-LI CHP Feasibility Study (EB)" imageMso="AppointmentColor7" onAction="NewMacros.psegli_chp_feasibility_study_services_eb" visible="true"/>
+            <mso:button id="PVDesignConsult" label="Solar PV Design Consulting (NC)" imageMso="AppointmentColor7" onAction="NewMacros.solar_pv_design_consulting_services_nc" visible="true"/>
+            <mso:button id="PVFeasDesignConsultCESIRAppEB" label="Solar PV Feasibility and Design Consulting + Add-Alt CESIR Application (EB)" imageMso="AppointmentColor7" onAction="NewMacros.solar_pv_feasibility_design_consulting_addalt_cesir_application_services_eb" visible="true"/>
+            <mso:button id="PVDesignConsultCESIRAppNC" label="Solar PV Design Consulting + Add-Alt CESIR Application (NC)" imageMso="AppointmentColor7" onAction="NewMacros.solar_pv_design_consulting_addalt_cesir_application_services_nc" visible="true"/>
+            <mso:button id="PVFeasDesignConsultCESIRAppEBCoOpCond" label="Solar PV Feasibility and Design Consulting + Add-Alt CESIR Application (EB) - (Co-Ops or Condos)" imageMso="AppointmentColor7" onAction="NewMacros.solar_pv_feasibility_design_consulting_addalt_cesir_application_services_eb_coops_or_condos" visible="true"/>
+            <mso:button id="PVOM" label="Solar PV O and M " imageMso="AppointmentColor7" onAction="NewMacros.solar_pv_om_services" visible="true"/>
+            <mso:button id="SolarStorageFeasDesignCESIREB" label="Solar + Storage Feasibility and Design Consulting + Add-Alt CESIR Application (EB)" imageMso="AppointmentColor7" onAction="NewMacros.solarstorage_feasibility_design_consulting_addalt_cesir_application_services_eb" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="OSGTCdropdown" label="Terms and Conditions" imageMso="AppointmentColor7">
+            <mso:button id="SolarInstallTsCsRecent" label="Solar Installation Ts and Cs (8.9.18) - Anna Lindeman and Pristine Johannessen" imageMso="AppointmentColor7" onAction="NewMacros.solar_installation_tscs_as_of_8_9_18" visible="true"/>
+          </mso:dropDown>
+          <mso:dropDown id="OSGdisclose" label="Disclosures" imageMso="AppointmentColor7">
+            <mso:button id="NYGenDisclos" label="NY Generation System Disclosure Form (UBP-DERS) - ATTACH TO CONTRACT IF NON-DEMAND METER INSTALL" imageMso="AppointmentColor7" onAction="NewMacros.ny_generation_system_disclosure_form_ubpders_attach_to_contract_if_nondemand_meter_install" visible="true"/>
+          </mso:dropDown>
+        </mso:group>
+      </mso:tab>
+    </mso:tabs>
+  </mso:ribbon>
+</mso:customUI>
